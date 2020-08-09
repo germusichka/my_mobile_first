@@ -1,5 +1,5 @@
 .news {
-	backgound-color: #f9f6e5;
+	background-color: #f9f6e5;
 
 	&__inner {
 		padding: 20px 0;
@@ -20,6 +20,14 @@
 			margin-top: 20px;
 		}
 
+		&:hover &-content {
+			background-color: var(--primaryColor);
+
+			color: var(--secondaryColor);
+			
+			bottom: 2em;
+		}
+
 		&-photo {
 			width: max-content;
 			margin: 0 auto;
@@ -30,7 +38,10 @@
 			padding: 7px 20px;
 			width: 100%;
 			min-height: 40px;
+
 			background-color: var(--secondaryColor);
+
+			transition: all .4s linear;
 
 			position: absolute;
 			bottom: 0;
