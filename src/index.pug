@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		//- google fonts
+		<link href="https://fonts.googleapis.com/css2?family=Dosis&family=Roboto&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet"> 
+
+		//- meta
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width initial-scale=1.0")
+
+		//- css
+		link(rel="stylesheet" href="css/_global.min.css")
+		link(rel="stylesheet" href="css/root.min.css")
+		link(rel="stylesheet" href="css/header.min.css")
+		link(rel="stylesheet" href="css/intro.min.css")
+		link(rel="stylesheet" href="css/menu.min.css")
+		link(rel="stylesheet" href="css/btn.min.css")
+		link(rel="stylesheet" href="css/pagination.min.css")
+		link(rel="stylesheet" href="css/promo.min.css")
+		link(rel="stylesheet" href="css/title.min.css")
+		link(rel="stylesheet" href="css/service.min.css")
+		link(rel="stylesheet" href="css/projects.min.css")
+		link(rel="stylesheet" href="css/team.min.css")
+		link(rel="stylesheet" href="css/news.min.css")
+		link(rel="stylesheet" href="css/footer.min.css")
+	
+		//- media
+		link(media='(min-width: 640px)' rel="stylesheet" href="css/media/mediaMobileLandscape.min.css")
+		link(media='(min-width: 768px)' rel="stylesheet" href="css/media/mediaTabletPortrait.min.css")
+		link(media='(min-width: 1024px)' rel="stylesheet" href="css/media/mediaTabletLandscape.min.css")
+		link(media='(min-width: 1200px)' rel="stylesheet" href="css/media/mediaDesktop.min.css")
+		
+		title Document
+
+	body
+
+		//- header
+		include header.pug
+
+		//- intro
+		section.intro
+			.container
+				.intro__inner
+					.intro-slider
+						.intro-slider__btns
+							img.intro-slider__btn(href='')
+							img.intro-slider__btn(href='')
+
+						.intro-slider__item.intro-slider__item--active
+							img.img.intro-slider__img(src='https://placehold.it/1900x920/550')
+							h1.intro-slider__title МЫСЛИ ГЛОБАЛЬНО
+							p.intro-slider__text Di Gі - это диджитал агентство полного цикла направленное на самый лучший результат наших клиентов в маркетинге продажах и управлении
+							a.btn.intro__btn
+
+						.intro-slider__item                      
+							img.img.intro-slider__img(src='https://placehold.it/1900x920/550')
+							h1.intro-slider__title МЫСЛИ ГЛОБАЛЬНО
+							p.intro-slider__text Di Gі - это диджитал агентство полного цикла направленное на самый лучший результат наших клиентов в маркетинге продажах и управлении
+							a.btn.intro__btn
+
+						.intro-slider__item
+							img.img.intro-slider__img(src='https://placehold.it/1900x920/550')
+							h1.intro-slider__title МЫСЛИ ГЛОБАЛЬНО
+							p.intro-slider__text Di Gі - это диджитал агентство полного цикла направленное на самый лучший результат наших клиентов в маркетинге продажах и управлении
+							a.btn.intro__btn
+
+						.intro-slider__pagination.pagination
+							.pagination__item.pagination__item--active
+							.pagination__item
+							.pagination__item
+
+		//- promo
+		section.promo
+			.container
+				.promo__inner
+					.promo__header
+						h2.promo__title Вы полюбите нас с первой встречи!
+						p.promo__text Мы предоставляем комплексный подход к продвижению компании продуктов и услуг в цифровой сфере.
+					a.promo__btn.btn.btn--secondary(href="#") ПЕРЕЗВОНИТЕ МНЕ
+
+		//- service		
+		section.service
+			.service__inner
+				.service__header
+					h2.service__title.title Сервис
+					.service__subtitle От идеи дhо незабываемого и измеримого результата.
+					.service__text Интеграция безупречного производства, передовых технологий и тщательного измерения производительности
+
+				.service__items
+
+					.service__item
+						.service__item-inner
+							img.service__item-img.img(src='https://placehold.it/64x64/700' alt="alas")
+							h3.service__item-title СТРАТЕГИЯ
+							.service__item-descr
+								.service__item-text Создадим уникальный и удобный дизайн..
+								.service__item-link ПОДРОБНЕЕ →
+
+					.service__item
+						.service__item-inner
+							img.service__item-img.img(src='https://placehold.it/64x64/700' alt="alas")
+							h3.service__item-title СТРАТЕГИЯ
+							.service__item-descr
+								.service__item-text Создадим уникальный и удобный дизайн..
+								.service__item-link ПОДРОБНЕЕ →
+
+					.service__item
+						.service__item-inner
+							img.service__item-img.img(src='https://placehold.it/64x64/700' alt="alas")
+							h3.service__item-title СТРАТЕГИЯ
+							.service__item-descr
+								.service__item-text Создадим уникальный и удобный дизайн..
+								.service__item-link ПОДРОБНЕЕ →
+
+					.service__item
+						.service__item-inner
+							img.service__item-img.img(src='https://placehold.it/64x64/700' alt="alas")
+							h3.service__item-title СТРАТЕГИЯ
+							.service__item-descr
+								.service__item-text Создадим уникальный и удобный дизайн..
+								.service__item-link ПОДРОБНЕЕ →
+
+					.service__item
+						.service__item-inner
+							img.service__item-img.img(src='https://placehold.it/64x64/700' alt="alas")
+							h3.service__item-title СТРАТЕГИЯ
+							.service__item-descr
+								.service__item-text Создадим уникальный и удобный дизайн..
+								.service__item-link ПОДРОБНЕЕ →
+
+					.service__item
+							.service__item-inner
+									img.service__item-img.img(src='https://placehold.it/64x64/700' alt="alas")
+									h3.service__item-title СТРАТЕГИЯ
+									.service__item-descr
+											.service__item-text Создадим уникальный и удобный дизайн..
+											.service__item-link ПОДРОБНЕЕ →
+
+					.service__item
+							.service__item-inner
+								img.service__item-img.img(src='https://placehold.it/64x64/700' alt="alas")
+								h3.service__item-title СТРАТЕГИЯ
+								.service__item-descr
+									.service__item-text Создадим уникальный и удобный дизайн..
+									.service__item-link ПОДРОБНЕЕ →
+
+					.service__item
+						.service__item-inner
+							img.service__item-img.img(src='https://placehold.it/64x64/700' alt="alas")
+							h3.service__item-title СТРАТЕГИЯ
+							.service__item-descr
+								.service__item-text Создадим уникальный и удобный дизайн..
+								.service__item-link ПОДРОБНЕЕ →
+
+		//- projects	
+		section.projects
+			.container
+				.projects__header
+					h2.projects__title.title.title--secondary Наши Проекты
+
+				.projects__items
+
+					.projects__item
+						.projects__item-inner
+							.projects__item-photo
+								img.projects__item-img.img(src='https://placehold.it/317x282/800')
+								.projects__item-info
+									img.projects__item-info-img(src='https://placehold.it/33x33/100' alt="alas")
+									img.projects__item-info-img(src='https://placehold.it/33x33/100' alt="alas")
+							h3.projects__item-title Lalique бутик
+											
+
+					.projects__item
+						.projects__item-inner
+							.projects__item-photo
+								img.projects__item-img.img(src=src='https://placehold.it/317x282/800')
+								.projects__item-info
+									img.projects__item-info-img(src='https://placehold.it/33x33/100' alt="alas")
+									img.projects__item-info-img(src='https://placehold.it/33x33/100' alt="alas")
+							h3.projects__item-title Lalique бутик
+								
+
+					.projects__item
+						.projects__item-inner
+							.projects__item-photo
+								img.projects__item-img.img(src=src='https://placehold.it/317x282/800')
+								.projects__item-info
+									img.projects__item-info-img(src='https://placehold.it/33x33/100' alt="alas")
+									img.projects__item-info-img(src='https://placehold.it/33x33/100' alt="alas")
+							h3.projects__item-title Lalique бутик
+
+					.projects__item
+						.projects__item-inner
+							.projects__item-photo
+								img.projects__item-img.img(src=src='https://placehold.it/317x282/800')
+								.projects__item-info
+									img.projects__item-info-img(src='https://placehold.it/33x33/100' alt="alas")
+									img.rojects__item-info-img(src='https://placehold.it/33x33/100' alt="alas")
+							h3.projects__item-title Lalique бутик
+
+		//- team
+		section.team
+			.container
+				.team__inner
+					.team__photo
+						img.team__img(src='https://placehold.it/280x250/1' alt='alas')
+					.team__content
+						h2.team__title.title Команда
+						p.team__text Наша команда - это наша самая большая ценность. Мы трудились чтобы собрать группу  экспертовчьи навыки дополняют друг друга. У членов нашей команды разные истории но мы разделяем общую страсть к идеалу. Мы верим чтобы оставатьсяпрофессионалом нужно развиваться поэтому мы постоянно ищем способы как стать лучше в том что мы делаем.
+						a.team__btn.btn(href="#") СМОТРЕТЬ ВИДЕО
+
+		//- news
+		section.news
+			.container
+				.news__inner
+					.news__header
+						h2.news__title.title Последние Новости
+					.news__articles
+						article.news__article
+							.news__article-photo
+								img.img.news__article-img(src='https://placehold.it/270x444/1' alt='alas')
+								.news__article-info
+									img.news__article-info-img(src='images/icons/info.svg' alt='alas')
+								.news__article-content
+									h3.news__article-title 3Д в брендинге
+
+						article.news__article
+							.news__article-photo
+								img.img.news__article-img(src='https://placehold.it/270x331/1' alt='alas')
+								.news__article-info
+									img.news__article-info-img(src='https://placehold.it/33x33/100' alt='alas')
+								.news__article-content
+									h3.news__article-title 3Д в брендинге
+						
+						article.news__article
+							.news__article-photo
+								img.img.news__article-img(src='https://placehold.it/270x383/1' alt='alas')
+								.news__article-info
+									img.news__article-info-img(src='https://placehold.it/33x33/100' alt='alas')
+								.news__article-content
+									h3.news__article-title 3Д в брендинге
+
+						article.news__article
+							.news__article-photo
+								img.img.news__article-img(src='https://placehold.it/270x210/1' alt='alas')
+								.news__article-info
+									img.news__article-info-img(src='https://placehold.it/33x33/100' alt='alas')
+								.news__article-content
+									h3.news__article-title 3Д в брендинге
+
+						article.news__article
+							.news__article-photo
+								img.img.news__article-img(src='https://placehold.it/270x197/1' alt='alas')
+								.news__article-info
+									img.news__article-info-img(src='https://placehold.it/33x33/100' alt='alas')
+								.news__article-content
+									h3.news__article-title 3Д в брендинге
+						
+						article.news__article
+							.news__article-photo
+								img.img.news__article-img(src='https://placehold.it/270x342/1' alt='alas')
+								.news__article-info
+									img.news__article-info-img(src='https://placehold.it/33x33/100' alt='alas')
+								.news__article-content
+									h3.news__article-title 3Д в брендинге
+
+						article.news__article
+							.news__article-photo
+								img.img.news__article-img(src='https://placehold.it/270x218/1' alt='alas')
+								.news__article-info
+									img.news__article-info-img(src='https://placehold.it/33x33/100' alt='alas')
+								.news__article-content
+										h3.news__article-title 3Д в брендинге
+
+						article.news__article
+							.news__article-photo
+								img.img.news__article-img(src='https://placehold.it/270x437/1' alt='alas')
+								.news__article-info
+									img.news__article-info-img(src='https://placehold.it/33x33/100' alt='alas')
+								.news__article-content
+									h3.news__article-title 3Д в брендинге
+		
+		//-comments
+		section.comments
+			.container
+				.comments__inner
+					.comments__photo
+						img.comments__img(src='images/icons/quotes.svg' alt='alas')
+
+					.comments__content
+						.comments__text Если нужно создавать либо повышать имидж компании, то диджитал-маркетинг является наиболее подходящим
+						.comments__author - Маргарита Акулич
+
+					.comments__pagination.pagination
+						.pagination__item
+
+		//- footer 
+		include footer.pug

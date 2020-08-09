@@ -1,0 +1,49 @@
+.projects {
+	background: linear-gradient(190deg, var(--primaryColor), transparent);
+	text-align: center;
+
+	&__header {
+		padding: 40px 0 80px;
+	}
+
+	&__item {
+		padding-bottom: 10px;
+
+		&:hover &-info {
+			visibility: visible;
+		}
+		
+		&-title {
+			margin-top: 10px;
+
+			font-size: 2em;
+			font-weight: bold;
+			color: var(--primaryColor);
+		}
+
+		&-photo {
+			position: relative;
+		}
+
+		&-info {
+			width: 90%;
+			height: 92%;  
+			visibility: hidden;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			background-color: #F9F6E5;
+			border-radius: .5em;
+
+			position: absolute;
+			top: 4%;
+			left: 5%;
+			z-index: 5;
+
+			&-img + &-img {
+				margin-left: 1em;
+			}
+		}
+	}
+}

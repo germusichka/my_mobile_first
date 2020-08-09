@@ -1,0 +1,26 @@
+.pagination {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+
+	&__item {
+		width: 10px;
+		height: 10px;
+
+		background-color: var(--primaryColor);
+		
+		
+		border-radius: 100%;
+		
+		& + & {
+			margin-left: 5px;
+		}
+
+		&--active {
+			box-sizing: border-box;
+
+			border: 1px solid #476E4D;
+			background-color: transparent;
+		}
+	}
+}
