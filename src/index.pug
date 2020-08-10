@@ -22,6 +22,7 @@ html(lang="ru")
 		link(rel="stylesheet" href="css/projects.min.css")
 		link(rel="stylesheet" href="css/team.min.css")
 		link(rel="stylesheet" href="css/news.min.css")
+		link(rel="stylesheet" href="css/comments.min.css")
 		link(rel="stylesheet" href="css/footer.min.css")
 	
 		//- media
@@ -285,14 +286,18 @@ html(lang="ru")
 			.container
 				.comments__inner
 					.comments__photo
-						img.comments__img(src='images/icons/quotes.svg' alt='alas')
+						img.comments__img(src='images/icons/quote.svg' alt='alas')
 
 					.comments__content
-						.comments__text Если нужно создавать либо повышать имидж компании, то диджитал-маркетинг является наиболее подходящим
+						.comments__text Если нужно создавать либо повышать имидж компании, то 
+							<span class='comments__text-accent'> диджитал-маркетинг </span> является наиболее подходящим
 						.comments__author - Маргарита Акулич
 
 					.comments__pagination.pagination
+						.pagination__item.pagination__item--active
 						.pagination__item
+						.pagination__item
+
 
 		//- footer 
 		include footer.pug
