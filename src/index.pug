@@ -12,9 +12,9 @@ html(lang="ru")
 		link(rel="stylesheet" href="css/_global.min.css")
 		link(rel="stylesheet" href="css/root.min.css")
 		link(rel="stylesheet" href="css/header.min.css")
+		link(rel="stylesheet" href="css/btn.min.css")
 		link(rel="stylesheet" href="css/intro.min.css")
 		link(rel="stylesheet" href="css/menu.min.css")
-		link(rel="stylesheet" href="css/btn.min.css")
 		link(rel="stylesheet" href="css/pagination.min.css")
 		link(rel="stylesheet" href="css/promo.min.css")
 		link(rel="stylesheet" href="css/title.min.css")
@@ -45,26 +45,32 @@ html(lang="ru")
 				.intro__inner
 					.intro-slider
 						.intro-slider__btns
-							img.intro-slider__btn(href='')
-							img.intro-slider__btn(href='')
+
+							.intro-slider__btn
+								.intro-slider__btn-photo
+									img.intro-slider__btn-img.intro-slider__btn-img--back(src='images/icons/slider-back-arrow.svg')
+
+							.intro-slider__btn
+								.intro-slider__btn-photo
+									img.intro-slider__btn-img.intro-slider__btn-img--forward(src='images/icons/slider-forward-arrow.svg')
 
 						.intro-slider__item.intro-slider__item--active
 							img.img.intro-slider__img(src='https://placehold.it/1900x920/550')
 							h1.intro-slider__title МЫСЛИ ГЛОБАЛЬНО
 							p.intro-slider__text Di Gі - это диджитал агентство полного цикла направленное на самый лучший результат наших клиентов в маркетинге продажах и управлении
-							a.btn.intro__btn
+							a.btn.intro__btn ПОДРОБНЕЕ
 
 						.intro-slider__item                      
 							img.img.intro-slider__img(src='https://placehold.it/1900x920/550')
 							h1.intro-slider__title МЫСЛИ ГЛОБАЛЬНО
 							p.intro-slider__text Di Gі - это диджитал агентство полного цикла направленное на самый лучший результат наших клиентов в маркетинге продажах и управлении
-							a.btn.intro__btn
+							a.btn.intro__btn ПОДРОБНЕЕ
 
 						.intro-slider__item
 							img.img.intro-slider__img(src='https://placehold.it/1900x920/550')
 							h1.intro-slider__title МЫСЛИ ГЛОБАЛЬНО
 							p.intro-slider__text Di Gі - это диджитал агентство полного цикла направленное на самый лучший результат наших клиентов в маркетинге продажах и управлении
-							a.btn.intro__btn
+							a.btn.intro__btn ПОДРОБНЕЕ
 
 						.intro-slider__pagination.pagination
 							.pagination__item.pagination__item--active
@@ -218,6 +224,7 @@ html(lang="ru")
 					.news__header
 						h2.news__title.title Последние Новости
 					.news__articles
+
 						article.news__article
 							.news__article-photo
 								img.img.news__article-img(src='https://placehold.it/270x444/1' alt='alas')
