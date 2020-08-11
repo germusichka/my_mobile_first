@@ -11,6 +11,7 @@
 
 		&:hover &-info {
 			visibility: visible;
+			opacity: 1;
 		}
 		
 		&-title {
@@ -31,13 +32,16 @@
 		&-info {
 			width: 90%;
 			height: 92%;  
-			visibility: hidden;
 			display: flex;
 			align-items: center;
 			justify-content: center;
+			visibility: hidden;
 
+			opacity: 0;
 			background-color: var(--tertiaryColor);
 			border-radius: .5em;
+
+			transition: all .3s linear; 
 
 			position: absolute;
 			top: 4%;

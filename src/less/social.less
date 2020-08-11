@@ -1,5 +1,16 @@
 .social {
 	display: flex;
 	justify-content: space-between;
-	padding: 2em 0;
+
+	&__item {
+		cursor: pointer;
+
+		&:hover .social__photo {
+			transform: translate(0, -20%)
+		}
+	}
+
+	&__photo {
+		transition: all .2s ease-in-out;
+	}
 }

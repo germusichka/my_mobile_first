@@ -1,5 +1,4 @@
 .service {
-
 	&__inner {
 		padding: 0 10px 20px;
 	}
@@ -12,6 +11,8 @@
 
 	&__title {
 		margin-bottom: 45px;	
+
+		color: var(--primaryColor);
 	}
 
 	&__subtitle {
@@ -28,6 +29,7 @@
 
 	&__item {
 		border: 1px solid black;
+		border-bottom: 0;
 		
 		text-align: center;
 
@@ -59,20 +61,22 @@
 			left: 7%;
 			z-index: 5;
 		}
+		
+		&:hover {
+			&::before {
+				opacity: 1;
+			}
 
-		&:hover::before {
-			opacity: 1;
+			& .service__item-descr {
+				visibility: visible;
+				height: auto;
+
+				opacity: 1;
+			}
 		}
 
-		&:hover &-descr {
-			visibility: visible;
-			height: auto;
-
-			opacity: 1;
-		}
-
-		& + & {
-			border-top: 0;
+		&:last-child {
+			border-top: 1px solid black;
 		}
 
 		&-title {
