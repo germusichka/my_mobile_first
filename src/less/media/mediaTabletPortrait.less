@@ -7,7 +7,127 @@ padding: 0 40px;
 /* header */
 
 .header {
-&__logo {
-    margin-left: 4px;
+	&__logo {
+			margin-left: 4px;
+	}
 }
+
+/* intro */
+
+.intro {
+	&-slider{
+		&__title {
+			margin-bottom: .5em;
+			&::before {
+				height: 0;
+
+				top: 0;
+			}
+		}
+
+		&__text {
+			display: block;
+		}
+	}
 }
+
+/* promo */
+
+.promo {
+	text-align: left;
+	&__inner {
+		display: flex;
+		align-items: flex-start;
+	}
+
+	&__header {
+		margin-bottom: 0;
+		max-width: 43em;
+	}
+
+	&__text {
+		margin-bottom: 0;
+	}
+}
+
+/* service */
+
+.service {
+	&__header {
+		text-align: left;
+	}
+	
+	&__subtitle {
+		&::before {
+			transform: none;
+
+			right: auto;
+			left: 0;
+		}
+	}
+}
+
+/* projects */
+
+.projects {
+	&__items {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	&__item {
+		width: 40%;
+	}
+}
+
+/* team */
+
+.team {
+	text-align: left;
+	&__inner {
+		display: flex;
+		padding-bottom: 10em;
+
+		position: relative;
+	}
+
+	&__content {
+		margin-left: 2.4em;
+
+		flex: 2;
+	}
+
+	&__title {
+		text-align: left;
+		
+		&::before {
+			transform: none;
+			// right: auto;
+			left: 0;
+		}
+	}
+
+
+	&__photo {
+		flex: 1.3;
+	}
+
+	&__btn {
+		margin-top: 1.5em;
+		transform: translateX(-50%);
+
+		position: absolute;
+		left: 50%;
+		z-index: 50;
+	}
+}
+
+/* footer */
+
+.footer {
+	&__title {
+		font-size: 3.6em;
+	}
+}
+
