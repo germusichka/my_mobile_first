@@ -35,6 +35,7 @@ padding: 0 40px;
 
 .promo {
 	text-align: left;
+
 	&__inner {
 		display: flex;
 		align-items: flex-start;
@@ -47,6 +48,10 @@ padding: 0 40px;
 
 	&__text {
 		margin-bottom: 0;
+	}
+
+	&__btn {
+		margin-right: 0;
 	}
 }
 
@@ -72,12 +77,14 @@ padding: 0 40px;
 .projects {
 	&__items {
 		display: flex;
-		justify-content: space-between;
+		justify-content: center;
 		flex-wrap: wrap;
 	}
 
 	&__item {
 		width: 48%;
+		margin: 2em;
+		max-width: 317px;
 	}
 }
 
@@ -85,14 +92,17 @@ padding: 0 40px;
 
 .team {
 	text-align: left;
+
 	&__inner {
 		display: flex;
 		padding-bottom: 10em;
+		align-items: flex-start;
 
 		position: relative;
 	}
 
 	&__content {
+		padding: 0;
 		margin-left: 2.4em;
 
 		flex: 2;
@@ -103,7 +113,7 @@ padding: 0 40px;
 		
 		&::before {
 			transform: none;
-			// right: auto;
+
 			left: 0;
 		}
 	}

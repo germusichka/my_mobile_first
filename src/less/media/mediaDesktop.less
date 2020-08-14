@@ -1,10 +1,85 @@
 /* container */
 
 .container {
-    margin-left: 0px;
+	max-width: 1200px;
+	padding: 0;
+	margin: 0 auto;
 }
 
-/* header */
+/* intro */
 
-// .header {
-// }
+.intro {
+	&-slider {
+		&__title {
+			font-size: 9.6em;
+		}
+	}
+}
+
+/* service */
+
+.service {
+	&__inner {
+		display: flex;
+		padding-top: 0;
+		padding-right: 0;
+		padding-left: 2em;
+		align-items: center;
+	}
+
+	&__header {
+		margin-right: 3em;
+	}
+
+	&__title {
+		text-align: left;
+	}
+
+	&__items {
+		margin-top: -1px;
+		margin-bottom: -1px;
+		margin-left: 0;
+		min-width: 75%;
+	}
+	&__item {
+		&-inner {
+			min-height: 25em;
+		}
+	}
+}
+
+/* projects */
+
+.projects {
+	&__item {
+		width: 21%;
+	}
+}
+
+/* team */
+
+.team {
+	&__content {
+		margin-left: 10em;
+	}
+}
+
+/* news */
+
+.news {
+	&__articles {
+		height: 93em;
+	}
+
+	&__article {
+		width: 25%;
+	}
+}
+
+/* footer */
+
+.footer {
+	&__title {
+		font-size: 2.4em;
+	}
+}
